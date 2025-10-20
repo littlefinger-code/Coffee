@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Body */
+body {
+  background-color: #fffdfb;
+}
+
+.container {
+  padding: 0rem 8rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #966441;
+  color: white;
+  padding: 1rem 8rem;
+}
+
+/* Logo Container */
+.logo_container h1 {
+  color: #e9ceac;
+}
+
+/* Nav Menu */
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.nav_menu li {
+  list-style-type: none;
+}
+
+.nav_menu li a {
+  text-decoration: none;
+  color: #e9ceac;
+}
+
+.start_menu_container {
+  display: grid;
+  /* flex-direction: row-reverse; */
+  flex-direction: row-reverse;
+  grid-template-columns: 6fr 6fr;
+  align-items: center;
+  padding: 5rem 8rem;
+  gap: 9rem;
+  justify-content: space-between;
+}
+
+.start_menu h1 {
+  color: #54391d;
+  font-size: 3rem;
+}
+
+.start_menu p {
+  color: #54391d;
+  margin: 1rem 0rem;
+}
+
+.start_menu button {
+  color: #e9ceac;
+  background-color: #54391d;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.start_menu_img img {
+  width: 80%;
+  border-radius: 3rem;
+}
+
+.start_menu .start_menu_img img{
+  display: none;
+}
+
+.coffee_gallery img {
+  height: 300px;
+  width: 300px;
+  /* object-fit: cover; */
+  background-size: 100%;
+  border-radius: 10px;
+  padding: .5rem;
+  background-color: #e9ceac;
+  /* gap: 4rem; */
+}
+
+.gallery_img {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+}
+
+/* Shop Menu */
+.shop_menu {
+  display: flex;
+  align-items: center;
+}
+
+.shop_menu_img img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.shopping_coffee button {
+  color: #e9ceac;
+  background-color: #54391d;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  gap: 9rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping_coffee p {
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 9rem;
+  justify-content: space-between;
+}
+
+/* Mobile Responsive */
+
+/* For tablets and smaller devices 200-600px */
+@media (max-width: 600px) {
+  .container {
+  padding: 0rem 2rem;
+}
+
+.start_menu_container .start_menu_img img {
+  display: none;
+}
+
+.start_menu .start_menu_img img{
+  display: block;
+  width: 100%;
+}
+
+.start_menu_container {
+  display: block;
+  /* grid-auto-flow: row; */
+  margin-bottom: 3rem;
+}
+
+ .gallery_img {
+  display: block;
+}
+
+.coffee_gallery img {
+  height: 300px;
+  width: 150px;
+
+}
+
+  .nav_menu {
+    display: none; /* Example: hide menu on small screens */
+  }
+
+  /* .start_menu_container {
+    flex-direction: column;
+    text-align: center;
+  } */
+
+  .start_menu_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .coffee_items_container .gallery_img img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .shop_menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+
+ 
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
